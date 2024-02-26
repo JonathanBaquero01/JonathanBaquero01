@@ -43,40 +43,44 @@
 
 ---
 
-<div id="canvas-container" align="center">
-    <canvas id="canvas" width="800" height="400"></canvas>
+<div id="header" align="center">
+    <h1>Paint Game</h1>
 </div>
 
+<canvas id="canvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+
 <script>
-    const canvas = document.getElementById('canvas');
-    const context = canvas.getContext('2d');
+const canvas = document.getElementById('canvas');
+const context = canvas.getContext('2d');
 
-    let painting = false;
+let painting = false;
 
-    function startPosition(e) {
-        painting = true;
-        draw(e);
-    }
+function startPosition(e) {
+    painting = true;
+    draw(e);
+}
 
-    function endPosition() {
-        painting = false;
-        context.beginPath();
-    }
+function endPosition() {
+    painting = false;
+    context.beginPath();
+}
 
-    function draw(e) {
-        if (!painting) return;
+function draw(e) {
+    if (!painting) return;
 
-        context.lineWidth = 5;
-        context.lineCap = 'round';
-        context.strokeStyle = 'black';
+    context.lineWidth = 5;
+    context.lineCap = 'round';
+    context.strokeStyle = 'black';
 
-        context.lineTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
-        context.stroke();
-        context.beginPath();
-        context.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
-    }
+    context.lineTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+    context.stroke();
+    context.beginPath();
+    context.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+}
 
-    canvas.addEventListener('mousedown', startPosition);
-    canvas.addEventListener('mouseup', endPosition);
-    canvas.addEventListener('mousemove', draw);
+canvas.addEventListener('mousedown', startPosition);
+canvas.addEventListener('mouseup', endPosition);
+canvas.addEventListener('mousemove', draw);
 </script>
+
+
