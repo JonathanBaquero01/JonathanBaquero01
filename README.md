@@ -3,16 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tetris Game</title>
+    <title>Snake Game</title>
     <style>
-        #tetris {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-        }
-
         canvas {
-            border: 1px solid #000;
+            background-color: #000;
+            display: block;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -29,71 +25,101 @@
             <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
         </a>
     </div>
-    <h2 align="center">🧑‍💻 ABOUT ME </h2>
+    <h2 align="center">🧑‍💻 ABOUT ME</h2>
     <h3 align="justify">
-        -💻📊With a background in systems engineering and computer science, and a specialized focus on data analysis using SQL, Python, and PowerBI, I have developed versatile skills ranging from PC and IT technical support to Java programming and marketing with artificial intelligence (AI).<br>
-        -🎓💼My experience includes roles in teaching as a lecturer and in the business sector, where I have applied my knowledge to provide technical support, teach classes, and contribute to the development of AI-driven marketing strategies. Additionally, my participation in the ORACLE NEXT EDUCATION course has provided me with additional skills in data analysis and Java programming.<br>
-        -🎓💻At University Masters, I had the opportunity to work as a support programmer, lecturer, and collaborator on AI marketing projects. Additionally, as a freelance professional, I have worked as a technology assistant for computer teams and in AI marketing studies, thus expanding my experience and skills in various areas.<br>
-        -🚀📈I am excited to continue my professional journey, exploring new opportunities and contributing to the success of innovative projects in the fields of technology and data analysis.
+        <!-- Your about me content here -->
     </h3>
     <h2 align="center">🛠️ Languages and Tools</h2>
     <div class="image-container" align="center">
-        <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="50" height="50">&nbsp;
-        <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" title="Python" alt="Python" width="50" height="50">&nbsp;
-        <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original-wordmark.svg" title="My SQL" alt="My SQL" width="50" height="50">&nbsp;
-        <img src="https://github.com/devicons/devicon/blob/master/icons/java/java-original-wordmark.svg" title="Java" alt="Java" width="50" height="50">&nbsp;
-        <img src="https://github.com/devicons/devicon/blob/master/icons/windows11/windows11-original.svg" title="Windows" alt="Windows" width="50" height="50">&nbsp;
-        <img src="https://img.hotimg.com/PowerBi.png" title="PowerBI" alt="PowerBI" width="70" height="50">&nbsp;
+        <!-- Your languages and tools content here -->
     </div>
-    <div id="tetris" align="center">
-        <canvas id="tetrisCanvas" width="240" height="400"></canvas>
+    <div align="center">
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
     </div>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const canvas = document.getElementById('tetrisCanvas');
-            const context = canvas.getContext('2d');
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
 
-            // Escalar el tamaño del canvas para que cada bloque tenga 20x20 píxeles
-            context.scale(20, 20);
+        const box = 20;
+        const canvasSize = 400;
+        const snake = [{ x: 10, y: 10 }];
+        let food = {};
+        let dx = 0;
+        let dy = 0;
+        let score = 0;
 
-            // Función para limpiar el canvas
-            function clearCanvas() {
-                context.fillStyle = '#000';
-                context.fillRect(0, 0, canvas.width, canvas.height);
+        function createFood() {
+            food = {
+                x: Math.floor(Math.random() * (canvasSize / box)) * box,
+                y: Math.floor(Math.random() * (canvasSize / box)) * box
+            };
+        }
+
+        function draw() {
+            ctx.clearRect(0, 0, canvasSize, canvasSize);
+            ctx.fillStyle = '#00FF00';
+            snake.forEach((segment) => {
+                ctx.fillRect(segment.x, segment.y, box, box);
+            });
+
+            ctx.fillStyle = '#FF0000';
+            ctx.fillRect(food.x, food.y, box, box);
+
+            ctx.fillStyle = '#FFFFFF';
+            ctx.font = '30px Arial';
+            ctx.fillText(`Score: ${score}`, 10, 30);
+        }
+
+        function moveSnake() {
+            const head = { x: snake[0].x + dx, y: snake[0].y + dy };
+            snake.unshift(head);
+
+            if (head.x === food.x && head.y === food.y) {
+                score += 10;
+                createFood();
+            } else {
+                snake.pop();
             }
+        }
 
-            // Función para dibujar un bloque
-            function drawBlock(x, y, color) {
-                context.fillStyle = color;
-                context.fillRect(x, y, 1, 1);
-                context.strokeStyle = '#000';
-                context.strokeRect(x, y, 1, 1);
+        function checkCollision() {
+            if (
+                snake[0].x < 0 ||
+                snake[0].x >= canvasSize ||
+                snake[0].y < 0 ||
+                snake[0].y >= canvasSize ||
+                snake.slice(1).some((segment) => segment.x === snake[0].x && segment.y === snake[0].y)
+            ) {
+                clearInterval(gameLoop);
+                alert(`Game Over! Your score is ${score}`);
             }
+        }
 
-            // Representación del tablero de juego (10x20)
-            const board = [];
-            for (let row = 0; row < 20; row++) {
-                board[row] = [];
-                for (let col = 0; col < 10; col++) {
-                    board[row][col] = '#000';
-                }
+        function gameLoop() {
+            moveSnake();
+            draw();
+            checkCollision();
+        }
+
+        createFood();
+        const gameLoop = setInterval(gameLoop, 100);
+
+        document.addEventListener('keydown', (event) => {
+            const keyPressed = event.key;
+            if (keyPressed === 'ArrowLeft' && dx === 0) {
+                dx = -box;
+                dy = 0;
+            } else if (keyPressed === 'ArrowRight' && dx === 0) {
+                dx = box;
+                dy = 0;
+            } else if (keyPressed === 'ArrowUp' && dy === 0) {
+                dx = 0;
+                dy = -box;
+            } else if (keyPressed === 'ArrowDown' && dy === 0) {
+                dx = 0;
+                dy = box;
             }
-
-            // Función para dibujar el tablero de juego
-            function drawBoard() {
-                clearCanvas();
-                board.forEach((row, y) => {
-                    row.forEach((color, x) => {
-                        drawBlock(x, y, color);
-                    });
-                });
-            }
-
-            drawBoard();
         });
     </script>
-    <div align="center">
-        <img src="https://readme-jokes.vercel.app/api" alt="Jokes Card">
-    </div>
 </body>
 </html>
