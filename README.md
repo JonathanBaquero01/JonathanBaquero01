@@ -5,18 +5,17 @@
     </div>
     
 <h1 align="center" width="1200"> Hi! <img src="https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif" alt="Jonathan Baquero" /> I am <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/jonathan-baquero-rodriguez/">Jonathan Baquero</a></h1>
-
-
+   
 </div>
 <div id="badges" align="center">
-        <a href="https://www.linkedin.com/in/jonathan-baquero-rodriguez/" target="_blank">
-            <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
-        </a>
-           
+    <a href="https://www.linkedin.com/in/jonathan-baquero-rodriguez/" target="_blank">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
+    </a>  
 </div>
     
 ---
-<h2 align="center" >🧑‍💻 ABOUT ME </h2>
+
+<h2 align="center">🧑‍💻 ABOUT ME</h2>
 
 <h3 align="justify">
     
@@ -26,20 +25,58 @@
 
 -🎓💻At University Masters, I had the opportunity to work as a support programmer, lecturer, and collaborator on AI marketing projects. Additionally, as a freelance professional, I have worked as a technology assistant for computer teams and in AI marketing studies, thus expanding my experience and skills in various areas.
 
--🚀📈I am excited to continue my professional journey, exploring new opportunities and contributing to the success of innovative projects in the fields of technology and data analysis. </h3>
+-🚀📈I am excited to continue my professional journey, exploring new opportunities and contributing to the success of innovative projects in the fields of technology and data analysis.
+</h3>
     
 ---
- <h2 align="center" >🛠️ Languages and Tools</h2>
 
- <div class="image-container" align="center">
+<h2 align="center">🛠️ Languages and Tools</h2>
+
+<div class="image-container" align="center">
     <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="50" height="50">&nbsp;
     <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" title="Python" alt="Python" width="50" height="50">&nbsp;
     <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original-wordmark.svg" title="My SQL" alt="My SQL" width="50" height="50">&nbsp;
     <img src="https://github.com/devicons/devicon/blob/master/icons/java/java-original-wordmark.svg" title="Java" alt="Java" width="50" height="50">&nbsp;
     <img src="https://github.com/devicons/devicon/blob/master/icons/windows11/windows11-original.svg" title="Windows" alt="Windows" width="50" height="50">&nbsp;
     <img src="https://img.hotimg.com/PowerBi.png" title="PowerBI" alt="PowerBI" width="70" height="50">&nbsp;
- 
----
-![Jokes Card](https://readme-jokes.vercel.app/api)
-
 </div>
+
+---
+
+<div id="canvas-container" align="center">
+    <canvas id="canvas" width="800" height="400"></canvas>
+</div>
+
+<script>
+    const canvas = document.getElementById('canvas');
+    const context = canvas.getContext('2d');
+
+    let painting = false;
+
+    function startPosition(e) {
+        painting = true;
+        draw(e);
+    }
+
+    function endPosition() {
+        painting = false;
+        context.beginPath();
+    }
+
+    function draw(e) {
+        if (!painting) return;
+
+        context.lineWidth = 5;
+        context.lineCap = 'round';
+        context.strokeStyle = 'black';
+
+        context.lineTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+        context.stroke();
+        context.beginPath();
+        context.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+    }
+
+    canvas.addEventListener('mousedown', startPosition);
+    canvas.addEventListener('mouseup', endPosition);
+    canvas.addEventListener('mousemove', draw);
+</script>
