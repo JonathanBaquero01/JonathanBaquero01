@@ -46,74 +46,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess the Color</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-            margin: 0;
-        }
-        
-        #game-container {
-            text-align: center;
-        }
-        
-        #color-box {
-            width: 200px;
-            height: 200px;
-            margin: 20px auto;
-            border: 2px solid black;
-        }
-        
-        .color-option {
-            display: inline-block;
-            width: 60px;
-            height: 60px;
-            margin: 10px;
-            cursor: pointer;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adivina el Color</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    #container {
+        text-align: center;
+    }    
+    #colorBox {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+        border: 2px solid black;
+        background-color: rgb(255, 0, 0); /* Cambia este color manualmente */
+    }
+    .colorOption {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        cursor: pointer;
+    }
+</style>
 </head>
 <body>
-    <div id="game-container">
-        <div id="color-box"></div>
-        <div id="options">
-            <div class="color-option" style="background-color: rgb(255, 0, 0);" onclick="checkColor('red')"></div>
-            <div class="color-option" style="background-color: rgb(0, 255, 0);" onclick="checkColor('green')"></div>
-            <div class="color-option" style="background-color: rgb(0, 0, 255);" onclick="checkColor('blue')"></div>
-        </div>
-        <div id="message"></div>
-        <button onclick="newGame()">New Color</button>
-    </div>  
-    <script>
-        function getRandomColor() {
-            const r = Math.floor(Math.random() * 256);
-            const g = Math.floor(Math.random() * 256);
-            const b = Math.floor(Math.random() * 256);
-            return `rgb(${r}, ${g}, ${b})`;
-        }
-        
-        function newGame() {
-            const color = getRandomColor();
-            document.getElementById('color-box').style.backgroundColor = color;
-            document.getElementById('message').textContent = '';
-        }
-        
-        function checkColor(guess) {
-            const color = document.getElementById('color-box').style.backgroundColor;
-            const correctColor = color.replace(/\s/g, '');
-            const result = guess === correctColor ? 'Correct!' : 'Incorrect!';
-            document.getElementById('message').textContent = result;
-        }
-        
-        newGame(); // Start a new game when the page loads
-    </script>
+<div id="container">
+    <div id="colorBox"></div>
+    <div id="options">
+        <div class="colorOption" style="background-color: rgb(255, 0, 0);"></div>
+        <div class="colorOption" style="background-color: rgb(0, 255, 0);"></div>
+        <div class="colorOption" style="background-color: rgb(0, 0, 255);"></div>
+        <div class="colorOption" style="background-color: rgb(255, 255, 0);"></div>
+        <div class="colorOption" style="background-color: rgb(255, 0, 255);"></div>
+        <div class="colorOption" style="background-color: rgb(0, 255, 255);"></div>
+    </div>
+    <p id="result"></p>
+</div>
 </body>
 </html>
 
