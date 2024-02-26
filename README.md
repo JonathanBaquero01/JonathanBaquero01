@@ -1,125 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Game</title>
-    <style>
-        canvas {
-            background-color: #000;
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
-</head>
-<body>
-    <div id="header" align="center">
-        <img src="https://img.hotimg.com/Portada-Linkedin.png" width="1200">
-        <div align="left">
-            <img src="https://komarev.com/ghpvc/?username=JonnathanBaquero01&color=FFD700" width="200" height="30">
-        </div>
-        <h1 align="center" width="1200"> Hi! <img src="https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif" alt="Jonathan Baquero" /> I am <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/jonathan-baquero-rodriguez/">Jonathan Baquero</a></h1>
+<div id="header" align="center">
+    <img src="https://img.hotimg.com/Portada-Linkedin.png" width="1200">
+    <div align="left">
+    <img src="https://komarev.com/ghpvc/?username=JonnathanBaquero01&color=FFD700" width="200" height="30">
     </div>
-    <div id="badges" align="center">
+    
+<h1 align="center" width="1200"> Hi! <img src="https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif" alt="Jonathan Baquero" /> I am <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/jonathan-baquero-rodriguez/">Jonathan Baquero</a></h1>
+
+
+
+
+
+   
+</div>
+<div id="badges" align="center">
         <a href="https://www.linkedin.com/in/ferchulobo777/" target="_blank">
             <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
         </a>
-    </div>
-    <h2 align="center">🧑‍💻 ABOUT ME</h2>
-    <h3 align="justify">
-        <!-- Your about me content here -->
-    </h3>
-    <h2 align="center">🛠️ Languages and Tools</h2>
-    <div class="image-container" align="center">
-        <!-- Your languages and tools content here -->
-    </div>
-    <div align="center">
-        <canvas id="gameCanvas" width="400" height="400"></canvas>
-    </div>
-    <script>
-        const canvas = document.getElementById('gameCanvas');
-        const ctx = canvas.getContext('2d');
+       
+         
+</div>
+    
+---
+<h2 align="center" >🧑‍💻 ABOUT ME </h2>
 
-        const box = 20;
-        const canvasSize = 400;
-        const snake = [{ x: 10, y: 10 }];
-        let food = {};
-        let dx = 0;
-        let dy = 0;
-        let score = 0;
+<h3 align="justify">
+    
+-💻📊With a background in systems engineering and computer science, and a specialized focus on data analysis using SQL, Python, and PowerBI, I have developed versatile skills ranging from PC and IT technical support to Java programming and marketing with artificial intelligence (AI).
 
-        function createFood() {
-            food = {
-                x: Math.floor(Math.random() * (canvasSize / box)) * box,
-                y: Math.floor(Math.random() * (canvasSize / box)) * box
-            };
+-🎓💼My experience includes roles in teaching as a lecturer and in the business sector, where I have applied my knowledge to provide technical support, teach classes, and contribute to the development of AI-driven marketing strategies. Additionally, my participation in the ORACLE NEXT EDUCATION course has provided me with additional skills in data analysis and Java programming.
+
+-🎓💻At University Masters, I had the opportunity to work as a support programmer, lecturer, and collaborator on AI marketing projects. Additionally, as a freelance professional, I have worked as a technology assistant for computer teams and in AI marketing studies, thus expanding my experience and skills in various areas.
+
+-🚀📈I am excited to continue my professional journey, exploring new opportunities and contributing to the success of innovative projects in the fields of technology and data analysis. </h3>
+    
+---
+ <h2 align="center" >🛠️ Languages and Tools</h2>
+
+ <div class="image-container" align="center">
+    <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="50" height="50">&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" title="Python" alt="Python" width="50" height="50">&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original-wordmark.svg" title="My SQL" alt="My SQL" width="50" height="50">&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/java/java-original-wordmark.svg" title="Java" alt="Java" width="50" height="50">&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/windows11/windows11-original.svg" title="Windows" alt="Windows" width="50" height="50">&nbsp;
+    <img src="https://img.hotimg.com/PowerBi.png" title="PowerBI" alt="PowerBI" width="70" height="50">&nbsp;
+ 
+---
+![Jokes Card](https://readme-jokes.vercel.app/api)
+
+</div>
+
+<script>
+    var dino = {
+        y: 100,
+        vy: 0,
+        gravity: 2,
+        jump: 20,
+        jumping: false
+    };
+
+    function update() {
+        if (dino.jumping) {
+            dino.vy = -dino.jump;
+            dino.jumping = false;
         }
 
-        function draw() {
-            ctx.clearRect(0, 0, canvasSize, canvasSize);
-            ctx.fillStyle = '#00FF00';
-            snake.forEach((segment) => {
-                ctx.fillRect(segment.x, segment.y, box, box);
-            });
+        dino.y += dino.vy;
+        dino.vy += dino.gravity;
 
-            ctx.fillStyle = '#FF0000';
-            ctx.fillRect(food.x, food.y, box, box);
-
-            ctx.fillStyle = '#FFFFFF';
-            ctx.font = '30px Arial';
-            ctx.fillText(`Score: ${score}`, 10, 30);
+        if (dino.y > 100) {
+            dino.y = 100;
+            dino.vy = 0;
         }
 
-        function moveSnake() {
-            const head = { x: snake[0].x + dx, y: snake[0].y + dy };
-            snake.unshift(head);
+        document.getElementById('dino').style.top = dino.y + 'px';
+    }
 
-            if (head.x === food.x && head.y === food.y) {
-                score += 10;
-                createFood();
-            } else {
-                snake.pop();
-            }
+    function jump() {
+        if (dino.y == 100) {
+            dino.jumping = true;
         }
+    }
 
-        function checkCollision() {
-            if (
-                snake[0].x < 0 ||
-                snake[0].x >= canvasSize ||
-                snake[0].y < 0 ||
-                snake[0].y >= canvasSize ||
-                snake.slice(1).some((segment) => segment.x === snake[0].x && segment.y === snake[0].y)
-            ) {
-                clearInterval(gameLoop);
-                alert(`Game Over! Your score is ${score}`);
-            }
-        }
+    setInterval(update, 20);
+</script>
 
-        function gameLoop() {
-            moveSnake();
-            draw();
-            checkCollision();
-        }
-
-        createFood();
-        const gameLoop = setInterval(gameLoop, 100);
-
-        document.addEventListener('keydown', (event) => {
-            const keyPressed = event.key;
-            if (keyPressed === 'ArrowLeft' && dx === 0) {
-                dx = -box;
-                dy = 0;
-            } else if (keyPressed === 'ArrowRight' && dx === 0) {
-                dx = box;
-                dy = 0;
-            } else if (keyPressed === 'ArrowUp' && dy === 0) {
-                dx = 0;
-                dy = -box;
-            } else if (keyPressed === 'ArrowDown' && dy === 0) {
-                dx = 0;
-                dy = box;
-            }
-        });
-    </script>
-</body>
-</html>
+<div id="game">
+    <div id="dino" style="position: absolute; top: 100px; left: 50px; width: 50px; height: 50px; background: red;" onclick="jump()"></div>
+</div>
