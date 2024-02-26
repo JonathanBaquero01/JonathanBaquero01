@@ -1,5 +1,5 @@
 <div id="header" align="center">
-    <img src="[https://res.cloudinary.com/dpvzlh1zv/image/upload/v1689631315/Brown_Wood_Minimalist_Profile_LinkedIn_Banner_1_nuucfo.png](https://media.licdn.com/dms/image/D4E16AQE4-f_RFm9abA/profile-displaybackgroundimage-shrink_350_1400/0/1708985383129?e=1714608000&v=beta&t=hsxYR1MLjwPAnt2onP2LRBI4WB6nJaevivvUOqD1_G4)" width="1200">
+    <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1689631315/Brown_Wood_Minimalist_Profile_LinkedIn_Banner_1_nuucfo.png](https://media.licdn.com/dms/image/D4E16AQE4-f_RFm9abA/profile-displaybackgroundimage-shrink_350_1400/0/1708985383129?e=1714608000&v=beta&t=hsxYR1MLjwPAnt2onP2LRBI4WB6nJaevivvUOqD1_G4" width="1200">
     <div align="left">
     <img src="https://komarev.com/ghpvc/?username=Ferchulobo777&color=FFD700" width="200" height="30">
     </div>
