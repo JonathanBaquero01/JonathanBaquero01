@@ -34,14 +34,15 @@
     
 ---
 <h2 align="center" >🧑‍💻 ABOUT ME </h2>
-    
+
+<h3 align="justify">
 -💻📊With a background in systems engineering and computer science, and a specialized focus on data analysis using SQL, Python, and PowerBI, I have developed versatile skills ranging from PC and IT technical support to Java programming and marketing with artificial intelligence (AI).
 
 -🎓💼My experience includes roles in teaching as a lecturer and in the business sector, where I have applied my knowledge to provide technical support, teach classes, and contribute to the development of AI-driven marketing strategies. Additionally, my participation in the ORACLE NEXT EDUCATION course has provided me with additional skills in data analysis and Java programming.
 
 -🎓💻At University Masters, I had the opportunity to work as a support programmer, lecturer, and collaborator on AI marketing projects. Additionally, as a freelance professional, I have worked as a technology assistant for computer teams and in AI marketing studies, thus expanding my experience and skills in various areas.
 
--🚀📈I am excited to continue my professional journey, exploring new opportunities and contributing to the success of innovative projects in the fields of technology and data analysis.
+-🚀📈I am excited to continue my professional journey, exploring new opportunities and contributing to the success of innovative projects in the fields of technology and data analysis. </h3>
     
 ---
  <h2 align="center" >🛠️ Lenguajes y Herramientas </h2>
