@@ -6,6 +6,12 @@
     <h1 align="center" width="1200"> Hi! <img src="https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif" alt="Jonathan Baquero" /> I am <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/jonathan-baquero-rodriguez/">Jonathan Baquero</a></h1>
 </div>
 
+<div id="tetris" align="center">
+    <canvas id="tetrisCanvas" width="240" height="400"></canvas>
+    <script src="https://tetris.fandom.com/wiki/MediaWiki:Tetris.js"></script>
+</div>
+
+
 <!-- Juego básico de puntajes -->
 <div id="scores" align="center">
     <h3>Game Scores</h3>
