@@ -33,17 +33,15 @@
 </div>
     
 ---
-<h2 align="center" >🧑‍💻 Acerca de Mi </h2>
+<h2 align="center" >🧑‍💻 ABOUT ME </h2>
     
-- 🧑‍🎓 Me encanta aprender y formarme continuamente en todo lo relacionado a la programacion.
+-💻📊With a background in systems engineering and computer science, and a specialized focus on data analysis using SQL, Python, and PowerBI, I have developed versatile skills ranging from PC and IT technical support to Java programming and marketing with artificial intelligence (AI).
 
-- 📚 Certificado como Full-Stack en Academlo.
-    
-- 🧠 Puedes preguntarme acerca de HTML, CSS, Tailwind, Sass, JavaScript, Python, React. Node-js, Express, Postgres SQL, My SQL, MongoDB, Sequelize, Jest.
-    
-- 📫 Puedes contactarme por aqui ferchulobo2015@gmail.com.
-    
-- 🌱 Actualmente me encuentro estudiando Angular, Java, y SpringBoot.
+-🎓💼My experience includes roles in teaching as a lecturer and in the business sector, where I have applied my knowledge to provide technical support, teach classes, and contribute to the development of AI-driven marketing strategies. Additionally, my participation in the ORACLE NEXT EDUCATION course has provided me with additional skills in data analysis and Java programming.
+
+-🎓💻At University Masters, I had the opportunity to work as a support programmer, lecturer, and collaborator on AI marketing projects. Additionally, as a freelance professional, I have worked as a technology assistant for computer teams and in AI marketing studies, thus expanding my experience and skills in various areas.
+
+-🚀📈I am excited to continue my professional journey, exploring new opportunities and contributing to the success of innovative projects in the fields of technology and data analysis.
     
 ---
  <h2 align="center" >🛠️ Lenguajes y Herramientas </h2>
