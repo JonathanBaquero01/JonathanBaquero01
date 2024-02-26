@@ -7,17 +7,12 @@
 <h1 align="center" width="1200"> Hi! <img src="https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif" alt="Jonathan Baquero" /> I am <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/jonathan-baquero-rodriguez/">Jonathan Baquero</a></h1>
 
 
-
-
-
-   
 </div>
 <div id="badges" align="center">
         <a href="https://www.linkedin.com/in/jonathan-baquero-rodriguez/" target="_blank">
             <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
         </a>
-       
-         
+           
 </div>
     
 ---
