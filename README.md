@@ -42,16 +42,6 @@
     <img src="https://img.hotimg.com/PowerBi.png" title="PowerBI" alt="PowerBI" width="70" height="50">&nbsp;
  
 ---
- 
-<h2 align="center">📊 Mis Estadisticas</h2>   
-<div align="center">
-  
- [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=ferchulobo777&theme=merko&hide_border=true&locale=es&date_format=j%20M%5B%20Y%5D)](https://git.io/streak-stats)
-
- ![ferchulobo777 GitHub stats](https://github-readme-stats.vercel.app/api?username=ferchulobo777&show_icons=true&theme=merko&hide_border=true)
-    
- [![Lenguajes](https://github-readme-stats.vercel.app/api/top-langs/?username=JonathanBaquero01&hide_progress=false&theme=merko&hide_border=true)](https://github.com/anuraghazra/github-readme-stats)
-
 ![Jokes Card](https://readme-jokes.vercel.app/api)
 
 </div>
