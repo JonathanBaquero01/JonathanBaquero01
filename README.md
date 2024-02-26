@@ -1,26 +1,23 @@
-
-![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)
-
 <div id="header" align="center">
     <img src="https://img.hotimg.com/Portada-Linkedin.png" width="1200">
     <div align="left">
-    <img src="https://komarev.com/ghpvc/?username=JonnathanBaquero01&color=FFD700" width="200" height="30">
+        <img src="https://komarev.com/ghpvc/?username=JonnathanBaquero01&color=FFD700" width="200" height="30">
     </div>
-    
-<h1 align="center" width="1200"> Hi! <img src="https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif" alt="Jonathan Baquero" /> I am <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/jonathan-baquero-rodriguez/">Jonathan Baquero</a></h1>
-
-
-
-
-
-   
+    <h1 align="center" width="1200"> Hi! <img src="https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif" alt="Jonathan Baquero" /> I am <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/jonathan-baquero-rodriguez/">Jonathan Baquero</a></h1>
 </div>
+
+<!-- Juego básico de puntajes -->
+<div id="scores" align="center">
+    <h3>Game Scores</h3>
+    <p>Player 1: 100</p>
+    <p>Player 2: 85</p>
+    <p>Player 3: 70</p>
+</div>
+
 <div id="badges" align="center">
-        <a href="https://www.linkedin.com/in/ferchulobo777/" target="_blank">
-            <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
-        </a>
-       
-         
+    <a href="https://www.linkedin.com/in/ferchulobo777/" target="_blank">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
+    </a>
 </div>
     
 ---
@@ -46,7 +43,8 @@
     <img src="https://github.com/devicons/devicon/blob/master/icons/java/java-original-wordmark.svg" title="Java" alt="Java" width="50" height="50">&nbsp;
     <img src="https://github.com/devicons/devicon/blob/master/icons/windows11/windows11-original.svg" title="Windows" alt="Windows" width="50" height="50">&nbsp;
     <img src="https://img.hotimg.com/PowerBi.png" title="PowerBI" alt="PowerBI" width="70" height="50">&nbsp;
- 
+</div>
+
 ---
 ![Jokes Card](https://readme-jokes.vercel.app/api)
 
