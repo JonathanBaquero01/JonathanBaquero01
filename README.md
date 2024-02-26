@@ -3,7 +3,7 @@
     <div align="left">
     <img src="https://komarev.com/ghpvc/?username=JonnathanBaquero01&color=FFD700" width="200" height="30">
     </div>
-    <h1 align="center" width="1200">Hi!, 👋 Iam <div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="ferchulobo777" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/jonathan-baquero-rodriguez/">Jonathan Baquero</a>
+    <h1 align="center" width="1200">Hi!, 👋 I am <div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="ferchulobo777" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/jonathan-baquero-rodriguez/">Jonathan Baquero</a>
         </div></h1>
     <h3 align="justify">Desarrollador web Full-Stack certificado con experiencia en la creación de aplicaciones web desde la concepción hasta la implementación final. conocimiento avanzado en lenguajes de programación como HTML, CSS, JavaScript y en la creación de aplicaciones web utilizando herramientas como React, Tailwind y Sass. Capaz de trabajar en todas las capas de una aplicación web, desde el lado del servidor hasta el lado del cliente, con habilidades en diseño y programación de la lógica de negocio y la base de datos subyacente. Además, tengo conocimiento en el desarrollo de aplicaciones móviles utilizando tecnologías como React Native. Comprometido con la mejora continua y el aprendizaje constante, con el objetivo de alcanzar la excelencia técnica en todas las áreas del desarrollo web.</h3>
 </div>
