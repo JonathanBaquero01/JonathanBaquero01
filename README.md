@@ -1,15 +1,19 @@
 
  
 <div id="header" align="center">
-    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
-        <img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: 1; width: 20%; max-width: 100px; height: auto; margin: 5px;">
-        <img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: 1; width: 20%; max-width: 100px; height: auto; margin: 5px;">
-        <img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: 1; width: 20%; max-width: 100px; height: auto; margin: 5px;">
-        <img src="https://img.hotimg.com/llorando.png" style="position: relative; z-index: 1; width: 30%; max-width: 150px; height: auto; margin: 5px;">
-        <img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: 1; width: 20%; max-width: 100px; height: auto; margin: 5px;">
-        <img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: 1; width: 20%; max-width: 100px; height: auto; margin: 5px;">
-        <img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: 1; width: 20%; max-width: 100px; height: auto; margin: 5px;">
+    <img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: 1; max-width: 100%; height: auto;">
+    <img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: 1; max-width: 100%; height: auto;">
+    <img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: 1; max-width: 100%; height: auto;">
+    <img src="https://img.hotimg.com/llorando.png" style="position: relative; z-index: 1; max-width: 100%; height: auto;">
+    <img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: 1; max-width: 100%; height: auto;">
+    <img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: 1; max-width: 100%; height: auto;">
+    <img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: 1; max-width: 100%; height: auto;">
+    <img src="https://img.hotimg.com/Portada-Linkedin.png" style="max-width: 100%;" alt="Portada de Linkedin">
+    <div align="left">
+        <img src="https://komarev.com/ghpvc/?username=JonnathanBaquero01&color=FFD700" width="200" height="35" alt="Visualizaciones en GitHub">
     </div>
+</div>
+
     <img src="https://img.hotimg.com/Portada-Linkedin.png" style="width: 100%; max-width: 1200px;">
     <div align="left">
         <img src="https://komarev.com/ghpvc/?username=JonnathanBaquero01&color=FFD700" width="200" height="35">
