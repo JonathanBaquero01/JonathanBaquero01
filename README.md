@@ -9,7 +9,6 @@
         <img src="https://komarev.com/ghpvc/?username=JonnathanBaquero01&color=FFD700" width="200" height="35" alt="Visualizaciones en GitHub">
     </div>
 </div>
-
     <img src="https://img.hotimg.com/Portada-Linkedin.png" style="width: 100%; max-width: 1200px;">
     <div align="left">
         <img src="https://komarev.com/ghpvc/?username=JonnathanBaquero01&color=FFD700" width="200" height="35">
