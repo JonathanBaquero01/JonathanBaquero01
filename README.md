@@ -1,9 +1,9 @@
 
  
 <div id="header" align="center">
-    <img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: 1; max-width: auto; height: auto;">
-    <img src="https://img.hotimg.com/llorando.png" style="position: relative; z-index: 1; max-width: auto; height: auto;">
-    <img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: 1; max-width: auto; height: auto;">
+    <img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: auto; max-width: auto; height: auto;">
+    <img src="https://img.hotimg.com/llorando.png" style="position: relative; z-index: auto; max-width: auto; height: auto;">
+    <img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: auto; max-width: auto; height: auto;">
     <img src="https://img.hotimg.com/Portada-Linkedin.png" style="max-width: 100%;" alt="Portada de Linkedin">
     <div align="left">
         <img src="https://komarev.com/ghpvc/?username=JonnathanBaquero01&color=FFD700" width="200" height="35" alt="Visualizaciones en GitHub">
