@@ -1,13 +1,6 @@
-<style>
-    @media screen and (orientation: portrait) {
-        .gif {
-            max-width: 100%;
-            height: auto;
-        }
-    }
-</style>
+
  
-<div id="header" align="center">
+<div style="position: relative;">
 <img src="https://img.hotimg.com/coin-shine1.gif" style="position: absolute; top: 0; left: 0; max-width: 10px; max-height: 10px; width: 50%; height: auto;">
     <img src="https://img.hotimg.com/llorando.png" style="position: relative; z-index: auto; max-width: auto; height: auto;">
     <img src="https://img.hotimg.com/coin-shine1.gif" style="position: absolute; top: 0; left: 0; max-width: 10px; max-height: 10px; width: 50%; height: auto;">
