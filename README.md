@@ -2,7 +2,7 @@
 
 <div id="header" align="center">
 
-<img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: 1; max-width: 100%; height: auto;">
+<img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: 1; max-width: 50px; height: auto;">
 <img src="https://img.hotimg.com/llorando.png" style="position: relative; z-index: 1; width: auto; height: auto;">
 <img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: 1; max-width: 100px; height: 100px;">
     <img src="https://img.hotimg.com/Portada-Linkedin.png" width="1200">
