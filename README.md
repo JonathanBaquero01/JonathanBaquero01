@@ -10,28 +10,6 @@
     </div>
 </div>
 
-<style>
-    #header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    @media screen and (orientation: portrait) {
-        #gif1, #gif2 {
-            max-width: 10%;
-            max-height: 10%;
-        }
-    }
-</style>
-   
-
  
 <h1 align="center" width="1200"> Hi! <img src="https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif" alt="Jonathan Baquero" /> I am <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/jonathan-baquero-rodriguez/">Jonathan Baquero</a></h1>
 
