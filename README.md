@@ -3,7 +3,7 @@
 <div id="header" align="center">
     <img src="https://img.hotimg.com/coin-shine1.gif" width="100" height="100">
     <img src="https://img.hotimg.com/llorando.png" style="max-width: 100%; height: auto; float: left; margin-right: 10px;">
-    <img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: 1; max-width: 100px; height: 100px;">
+      <img src="https://img.hotimg.com/coin-shine1.gif" width="100" height="100">
    <img src="https://img.hotimg.com/Portada-Linkedin.png" width="1200">
     </div>  
     <div align="left">
