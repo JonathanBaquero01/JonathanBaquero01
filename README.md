@@ -1,7 +1,7 @@
 <div id="header" align="center">
 
 <img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: 1; width: 100px; height: 100px;">
-<img src="https://img.hotimg.com/llorando.png" style="position: relative; z-index: 1; width: 150px; height: 100px;">
+<img src="https://img.hotimg.com/llorando.png" style="position: relative; z-index: 1; width: 160px; height: 110px;">
   <img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: 1; width: 100px; height: 100px;">
     <img src="https://img.hotimg.com/Portada-Linkedin.png" width="1200">
     <div align="left">
