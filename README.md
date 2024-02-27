@@ -1,6 +1,5 @@
 
- 
-div id="header" align="center">
+ <div> id="header" align="center">
 <img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: 1; width: 100px; height: 100px;">
     <img src="https://img.hotimg.com/llorando.png" style="position: relative; z-index: auto; max-width: auto; height: auto;">
 <img src="https://img.hotimg.com/coin-shine1.gif" style="position: relative; z-index: 1; width: 100px; height: 100px;">
