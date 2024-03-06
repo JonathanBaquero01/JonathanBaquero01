@@ -4,7 +4,7 @@
     <img src="https://img.hotimg.com/coin-shine1.gif" width="100" height="100">
     <img src="https://img.hotimg.com/llorando.png" style="max-width: 100%; height: auto; float: left; margin-right: 10px;">
       <img src="https://img.hotimg.com/coin-shine1.gif" width="100" height="100">
-   <img src="https://img.hotimg.com/Portada-Linkedin.png" width="1200">
+   <img src="https://ibb.co/z545B2m" width="1200">
     </div>  
     <div align="left">
     <img src="https://komarev.com/ghpvc/?username=JonnathanBaquero01&color=FFD700" width="200" height="35">
